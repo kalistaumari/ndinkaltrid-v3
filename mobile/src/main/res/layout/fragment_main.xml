@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/hrSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fall Detection Monitor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/hrTxt"
+        android:textSize="80dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/hrSwitch"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/currentZTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:layout_alignBaseline="@+id/currentYTxt"
+        android:layout_alignBottom="@+id/currentYTxt"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/currentXTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:layout_alignBaseline="@+id/currentYTxt"
+        android:layout_alignBottom="@+id/currentYTxt"
+        android:layout_toStartOf="@+id/hrSwitch" />
+
+    <TextView
+        android:id="@+id/currentYTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:layout_above="@+id/lastSyncTxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="bpm"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/hrTxt"
+        android:layout_alignBottom="@+id/hrTxt"
+        android:layout_toEndOf="@+id/hrSwitch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="last sync"
+        android:id="@+id/lastSyncTxt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp" />
+
+</RelativeLayout>
